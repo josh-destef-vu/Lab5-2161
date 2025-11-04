@@ -46,7 +46,7 @@ int main() {
 			
 					break;
 
-			case 2: // Sort function Bubble - Matt
+			case 2: // Sort function Bubble - Matt - A - 
 
                     // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
 					for (int i = 0; i < sz; i++){
