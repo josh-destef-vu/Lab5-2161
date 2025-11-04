@@ -1,7 +1,6 @@
 #include "myheaders.h"
 
 //Bubble sort : Matt
-//commit
 // Your ASort function(s) goes here ..
 void bubbleSort(){
 	bool swapped;
