@@ -46,7 +46,7 @@ int main() {
 			
 					break;
 
-			case 2: // Sort function A
+			case 2: // Sort function Bubble - Matt
 
                     // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
                     
@@ -75,7 +75,104 @@ int main() {
 			
 					break;
 
-			case 3: // Sort function B
+			case 3: // Sort function Comb - Josh
+
+			        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
+
+
+					begin_time = clock();   // start cpu timer
+
+
+					begin_time = clock();   // start cpu timer
+
+					// Call your Sort function B here to sort the array 'wData'
+			        //  Note that 'wDdata' is of size 'sz' (see case 1).
+
+
+
+					end_time = clock();		// end cpu timer
+
+					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
+					cout << endl << "(B)Sort ran for " << cpu_time_used << " secs.";
+
+					ofilename = "lab5_B_out.txt";
+					writefile(wData, sz, ofilename);
+
+					if (sz < 0)	 {
+						 cerr << endl << "ERROR: Output File could not be opened." <<endl;
+						 cerr << "       Quitting Now!" << endl << endl;
+						 return 0;
+					}
+					else cout << endl << "Output written to " << ofilename << endl;
+
+					break;
+
+
+			case 4: // Sort function Selection - Zach
+
+			        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
+
+
+					begin_time = clock();   // start cpu timer
+
+
+					begin_time = clock();   // start cpu timer
+
+					// Call your Sort function B here to sort the array 'wData'
+			        //  Note that 'wDdata' is of size 'sz' (see case 1).
+
+
+
+					end_time = clock();		// end cpu timer
+
+					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
+					cout << endl << "(B)Sort ran for " << cpu_time_used << " secs.";
+
+					ofilename = "lab5_B_out.txt";
+					writefile(wData, sz, ofilename);
+
+					if (sz < 0)	 {
+						 cerr << endl << "ERROR: Output File could not be opened." <<endl;
+						 cerr << "       Quitting Now!" << endl << endl;
+						 return 0;
+					}
+					else cout << endl << "Output written to " << ofilename << endl;
+
+					break;
+
+			case 5: // Sort function Shell - Matt
+
+			        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
+
+
+					begin_time = clock();   // start cpu timer
+
+
+					begin_time = clock();   // start cpu timer
+
+					// Call your Sort function B here to sort the array 'wData'
+			        //  Note that 'wDdata' is of size 'sz' (see case 1).
+
+
+
+					end_time = clock();		// end cpu timer
+
+					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
+					cout << endl << "(B)Sort ran for " << cpu_time_used << " secs.";
+
+					ofilename = "lab5_B_out.txt";
+					writefile(wData, sz, ofilename);
+
+					if (sz < 0)	 {
+						 cerr << endl << "ERROR: Output File could not be opened." <<endl;
+						 cerr << "       Quitting Now!" << endl << endl;
+						 return 0;
+					}
+					else cout << endl << "Output written to " << ofilename << endl;
+
+					break;
+
+			case 6: // Sort function Radix - Josh
 			
 			        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
 			        
@@ -107,7 +204,38 @@ int main() {
 			
 					break;
 					
-			// Write the other cases 4 - 7 here		
+			case 7: // Sort function Counting - Zach
+
+			        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
+
+
+					begin_time = clock();   // start cpu timer
+
+
+					begin_time = clock();   // start cpu timer
+
+					// Call your Sort function B here to sort the array 'wData'
+			        //  Note that 'wDdata' is of size 'sz' (see case 1).
+
+
+
+					end_time = clock();		// end cpu timer
+
+					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
+					cout << endl << "(B)Sort ran for " << cpu_time_used << " secs.";
+
+					ofilename = "lab5_B_out.txt";
+					writefile(wData, sz, ofilename);
+
+					if (sz < 0)	 {
+						 cerr << endl << "ERROR: Output File could not be opened." <<endl;
+						 cerr << "       Quitting Now!" << endl << endl;
+						 return 0;
+					}
+					else cout << endl << "Output written to " << ofilename << endl;
+
+					break;
+
 			
 			case 0: // Exit Program
 
