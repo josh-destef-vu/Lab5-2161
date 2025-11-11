@@ -1,5 +1,28 @@
 #include "myheaders.h"
 
 
-// Your BSort function(s) go here
+void Combsort(long arr[], int n) {
+    int gap = n;
+    bool swapped = true;
 
+    // shrink factor = 1.3 (standard for comb sort)
+    while (gap > 1 || swapped) {
+
+        // Update the gap
+        gap = (gap * 10) / 13;
+        if (gap < 1)
+            gap = 1;
+
+        swapped = false;
+
+        // Perform a gapped comparison
+        for (int i = 0; i + gap < n; i++) {
+            if (arr[i] > arr[i + gap]) {
+                long temp = arr[i];
+                arr[i] = arr[i + gap];
+                arr[i + gap] = temp;
+                swapped = true;
+            }
+        }
+    }
+}
