@@ -5,44 +5,42 @@
 #include "myheaders.h"
 #include <vector>
 
-void countingsort(long data[], int n) {
-    // Case where there is nothing to sort
-    if (n <= 1) return;
-
-    // Find the min and max values of the array
-    long minVal = data[0];
-    long maxVal = data[0];
-    for (int i = 1; i < n; i++) {
-        if (data[i] < minVal) minVal = data[i];
-        if (data[i] > maxVal) maxVal = data[i];
+void countingsort(long arr[], int n) {
+    // No sort needed
+    if (n <= 0) {
+        return;
     }
-    // Calculate the range of the array
+
+    // Find the max and min vals in the array
+    long minVal = arr[0];
+    long maxVal = arr[0];
+    for (int i = 1; i < n; i++) {
+        if (arr[i] < minVal) minVal = arr[i];
+        if (arr[i] > maxVal) maxVal = arr[i];
+    }
+
+    // Calc Range
     long range = maxVal - minVal + 1;
 
-    // Initialize counting array in a vector
-    vector<long> count(range, 0);
+    // Declare and initialize count array
+    long *count = new long[range]();
 
-    // Count the frequency of each element
+    // Store the counts of each number
     for (int i = 0; i < n; i++) {
-        count[data[i] - minVal]++;
+        count[arr[i] - minVal]++;
     }
 
-    // Calculate the prefix sums
-    for (int i = 1; i < range; i++) {
-        count[i] += count[i - 1];
+    // Save to original array
+    int index = 0;
+    for (long i = 0; i < range; i++) {
+        while (count[i] > 0) {
+            arr[index++] = i + minVal;
+            count[i]--;
+        }
     }
 
-    // Create the output array using vectors
-    vector<long> output(n);
-    for (int i = n - 1; i >= 0; i--) {
-        output[count[data[i] - minVal] - 1] = data[i];
-        count[data[i] - minVal]--;
-    }
-
-    // Copy the sorted data back into data array
-    for (int i = 0; i < n; i++) {
-        data[i] = output[i];
-    }
+    // Free memory
+    delete[] count;
 }
 
 
