@@ -4,7 +4,7 @@
 #include <string>
 #include <unistd.h>
 //#define MAXSIZE	 2100000
-#define MAXSIZE 100
+#define MAXSIZE 10000
 using namespace std;
 
 void	printmenu();

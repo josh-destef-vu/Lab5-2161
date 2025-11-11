@@ -5,17 +5,18 @@ void Combsort(long arr[], int n) {
     int gap = n;
     bool swapped = true;
 
-    // shrink factor = 1.3 (standard for comb sort)
+    //shrink factor = 1.3 (standard for comb sort)
     while (gap > 1 || swapped) {
 
-        // Update the gap
+        //update gap
         gap = (gap * 10) / 13;
-        if (gap < 1)
+        if (gap < 1){
             gap = 1;
+        }
 
         swapped = false;
 
-        // Perform a gapped comparison
+        //gapped comparison
         for (int i = 0; i + gap < n; i++) {
             if (arr[i] > arr[i + gap]) {
                 long temp = arr[i];
