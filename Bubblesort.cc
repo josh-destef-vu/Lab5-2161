@@ -2,7 +2,7 @@
 
 //Bubble sort : Matt
 // Your ASort function(s) goes here ..
-void bubbleSort(){
+void bubbleSort(long arr[], int n){
 	bool swapped;
 	for (int i = 0; i < n - 1){
 		swapped = false;
