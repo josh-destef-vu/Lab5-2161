@@ -58,7 +58,7 @@ int main() {
 			
 					// Call your Sort function A here to sort the array 'wData''
 			        //  Note that 'wData' is of size 'sz' (see case 1).
-					bubbleSort(wData, sz);
+					Bubblesort(wData, sz);
 			
 					end_time = clock();		// end cpu timer
 
@@ -158,7 +158,7 @@ int main() {
 
 					// Call your Sort function B here to sort the array 'wData'
 			        //  Note that 'wDdata' is of size 'sz' (see case 1).
-					shellSort(wData, sz);
+					Shellsort(wData, sz);
 
 
 					end_time = clock();		// end cpu timer
@@ -166,7 +166,7 @@ int main() {
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 					cout << endl << "(B)Sort ran for " << cpu_time_used << " secs.";
 
-					ofilename = "lab5_B_out.txt";
+					ofilename = "lab5_Shell_out.txt";
 					writefile(wData, sz, ofilename);
 
 					if (sz < 0)	 {

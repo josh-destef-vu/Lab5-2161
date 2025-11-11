@@ -1,7 +1,7 @@
 #include "myheaders.h"
 
 //Shell sort : Matt
-void shellSort(int arr[], int n) {
+void Shellsort(long arr[], int n) {
     // Start with a large gap, then reduce the gap
     for (int gap = n / 2; gap > 0; gap /= 2) {
         // Do a gapped insertion sort for each element
