@@ -5,7 +5,7 @@
 #include "myheaders.h"
 #include <vector>
 
-void countingsort(long data[], int n) {
+void Countingsort(long data[], int n) {
     // Case where there is nothing to sort
     if (n <= 1) return;
 

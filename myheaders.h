@@ -17,6 +17,6 @@ void	swap(long& x, long& y);
 void Bubblesort(long arr[], int n);
 void Combsort(long arr[], int n);
 void Selectionsort(long arr[], int n);
-void Counting(long arr[], int n);
+void Countingsort(long arr[], int n);
 void Radixsort(long arr[], int n);
 void Shellsort(long arr[], int n);
