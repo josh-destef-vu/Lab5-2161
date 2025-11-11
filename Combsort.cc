@@ -9,7 +9,7 @@ void Combsort(long arr[], int n) {
     while (gap > 1 || swapped) {
 
         //update gap
-        gap = (gap * 10) / 13;
+        gap = (gap * 10) / 13; //using recommended implementation of 10/13 instead of 1.3 based on reading
         if (gap < 1){
             gap = 1;
         }
