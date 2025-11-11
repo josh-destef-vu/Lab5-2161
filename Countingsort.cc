@@ -23,12 +23,14 @@ void Countingsort(long data[], int n) {
     vector<long> count(range, 0);
 
     // Count the frequency of each element
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) {
         count[data[i] - minVal]++;
+    }
 
     // Calculate the prefix sums
-    for (int i = 1; i < range; i++)
+    for (int i = 1; i < range; i++) {
         count[i] += count[i - 1];
+    }
 
     // Create the output array using vectors
     vector<long> output(n);
@@ -38,8 +40,9 @@ void Countingsort(long data[], int n) {
     }
 
     // Copy the sorted data back into data array
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) {
         data[i] = output[i];
+    }
 }
 
 
