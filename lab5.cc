@@ -238,7 +238,7 @@ int main() {
 
 					break;
 
-			
+
 			case 0: // Exit Program
 
 					cout << endl << "Received program exit command - I QUIT!" << endl << endl;
