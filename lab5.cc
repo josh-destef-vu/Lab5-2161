@@ -58,7 +58,7 @@ int main() {
 			
 					// Call your Sort function A here to sort the array 'wData''
 			        //  Note that 'wData' is of size 'sz' (see case 1).
-					Bubblesort(wData, sz);
+					bubbleSort(wData, sz);
 			
 					end_time = clock();		// end cpu timer
 
@@ -146,6 +146,9 @@ int main() {
 			case 5: // Sort function Shell - Matt
 
 			        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
+					for (int i = 0; i < sz; i++){
+						wData[i] = data[i];				
+					}
 
 
 					begin_time = clock();   // start cpu timer
@@ -155,7 +158,7 @@ int main() {
 
 					// Call your Sort function B here to sort the array 'wData'
 			        //  Note that 'wDdata' is of size 'sz' (see case 1).
-
+					shellSort(wData, sz);
 
 
 					end_time = clock();		// end cpu timer
