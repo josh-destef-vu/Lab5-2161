@@ -12,3 +12,11 @@ void	printarray(long data[], long size);
 int		readfile(string infilename, long data[]);
 int		writefile(long data[], long size, string outfilename);
 void	swap(long& x, long& y);
+
+//sorts
+void Bubblesort(long arr[], int n);
+void Combsort(long arr[], int n);
+void Selectionsort(long arr[], int n);
+void Counting(long arr[], int n);
+void Radixsort(long arr[], int n);
+void Shellsort(long arr[], int n);
