@@ -31,7 +31,7 @@ long getMin(long arr[], int n) {
 
 //go through and determine how many numbers are in each digit place
 void countSort(long arr[], int n, long exp) {
-    long output[n];
+    long* output = new long[n]; //dynamic allocation because program breaks otherwise
     int count[10] = {0};
 
     //Count total of each digit
@@ -56,6 +56,8 @@ void countSort(long arr[], int n, long exp) {
     for (int i = 0; i < n; i++) {
         arr[i] = output[i];
     }
+
+    delete[] output;
 }
 
 void Radixsort(long arr[], int n) {
