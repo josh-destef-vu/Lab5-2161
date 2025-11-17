@@ -19,4 +19,7 @@ void Combsort(long arr[], int n);
 void Selectionsort(long arr[], int n);
 void Countingsort(long arr[], int n);
 void Radixsort(long arr[], int n);
+void countSort(long arr[], int n, long exp); //radix helper
+long getMax(long arr[], int n); //radix helper
+
 void Shellsort(long arr[], int n);

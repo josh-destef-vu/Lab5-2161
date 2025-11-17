@@ -66,7 +66,7 @@ int main() {
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 					cout << endl << "(A)Sort ran for " << cpu_time_used << " secs.";
 			
-					ofilename = "lab5_A_out.txt";
+					ofilename = "lab5_Bubble_out.txt";
 					writefile(wData, sz, ofilename);
 					
 					if (sz < 0)	 {
@@ -100,7 +100,7 @@ int main() {
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 					cout << endl << "(B)Sort ran for " << cpu_time_used << " secs.";
 
-					ofilename = "lab5_B_out.txt";
+					ofilename = "lab5_Comb_out.txt";
 					writefile(wData, sz, ofilename);
 
 					if (sz < 0)	 {
@@ -133,7 +133,7 @@ int main() {
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 					cout << endl << "(B)Sort ran for " << cpu_time_used << " secs.";
 
-					ofilename = "lab5_C_out.txt";
+					ofilename = "lab5_Selection_out.txt";
 					writefile(wData, sz, ofilename);
 
 					if (sz < 0)	 {
@@ -192,7 +192,7 @@ int main() {
 			
 					// Call your Sort function B here to sort the array 'wData'
 			        //  Note that 'wDdata' is of size 'sz' (see case 1).
-
+					Radixsort(wData, sz);
 
 			
 					end_time = clock();		// end cpu timer
@@ -200,7 +200,7 @@ int main() {
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 					cout << endl << "(B)Sort ran for " << cpu_time_used << " secs.";
 			
-					ofilename = "lab5_B_out.txt";
+					ofilename = "lab5_Radix_out.txt";
 					writefile(wData, sz, ofilename);
 					
 
