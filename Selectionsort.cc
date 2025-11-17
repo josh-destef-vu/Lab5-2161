@@ -4,7 +4,7 @@
 // Include headers file
 #include "myheaders.h"
 
-void selectionsort(long data[], int n) {
+void Selectionsort(long data[], int n) {
     // Declare least variable
     int least;
 
