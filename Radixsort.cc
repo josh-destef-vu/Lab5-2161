@@ -32,7 +32,7 @@ long getMin(long arr[], int n) {
 //go through and determine how many numbers are in each digit place
 void countSort(long arr[], int n, long exp) {
     long* output = new long[n]; //dynamic allocation because program breaks otherwise
-    int count[10] = {0};
+    int count[0] = {0};
 
     //Count total of each digit
     for (int i = 0; i < n; i++) {
@@ -88,7 +88,7 @@ void Radixsort(long arr[], int n) {
 
     //readjust all values from earlier back to real values
     if(offset != 0){
-    	for(int i = 0; i <n; i++){
+    	for(int i = 0; i < n; i++){
     		arr[i] += offset;
     	}
     }

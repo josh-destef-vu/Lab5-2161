@@ -81,7 +81,9 @@ int main() {
 			case 3: // Sort function Comb - Josh
 
 			        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
-
+					for (int i = 0; i < sz; i++){
+						wData[i] = data[i];
+					}
 
 					begin_time = clock();   // start cpu timer
 
@@ -117,6 +119,9 @@ int main() {
 
 			        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
 
+					for (int i = 0; i < sz; i++){
+						wData[i] = data[i];
+					}
 
 					begin_time = clock();   // start cpu timer
 
@@ -183,9 +188,9 @@ int main() {
 			case 6: // Sort function Radix - Josh
 			
 			        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
-			        
-			        
-					begin_time = clock();   // start cpu timer
+					for (int i = 0; i < sz; i++){
+						wData[i] = data[i];
+					}
 			
 
 					begin_time = clock();   // start cpu timer
@@ -216,7 +221,9 @@ int main() {
 			case 7: // Sort function Counting - Zach
 
 			        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
-
+					for (int i = 0; i < sz; i++){
+						wData[i] = data[i];
+					}
 
 					begin_time = clock();   // start cpu timer
 
