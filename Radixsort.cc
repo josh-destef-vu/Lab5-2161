@@ -32,7 +32,7 @@ long getMin(long arr[], int n) {
 //go through and determine how many numbers are in each digit place
 void countSort(long arr[], int n, long exp) {
     long* output = new long[n]; //dynamic allocation because program breaks otherwise
-    int count[0] = {0};
+    int count[10] = {0};
 
     //Count total of each digit
     for (int i = 0; i < n; i++) {
