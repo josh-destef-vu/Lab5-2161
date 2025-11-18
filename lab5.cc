@@ -54,11 +54,8 @@ int main() {
 
                     
 					begin_time = clock();   // start cpu timer
-			
-					// Call your Sort function A here to sort the array 'wData''
-			        //  Note that 'wData' is of size 'sz' (see case 1).
-					Bubblesort(wData, sz);
 
+					Bubblesort(wData, sz);
 			
 					end_time = clock();		// end cpu timer
 
@@ -86,15 +83,7 @@ int main() {
 
 					begin_time = clock();   // start cpu timer
 
-
-					begin_time = clock();   // start cpu timer
-
-					// Call your Sort function B here to sort the array 'wData'
-			        //  Note that 'wDdata' is of size 'sz' (see case 1).
 					Combsort(wData, sz);
-
-
-
 
 					end_time = clock();		// end cpu timer
 
@@ -127,11 +116,6 @@ int main() {
 
 					Selectionsort(wData, sz);
 
-					// Call your Sort function B here to sort the array 'wData'
-			        //  Note that 'wDdata' is of size 'sz' (see case 1).
-
-
-
 					end_time = clock();		// end cpu timer
 
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
@@ -159,13 +143,7 @@ int main() {
 
 					begin_time = clock();   // start cpu timer
 
-
-					begin_time = clock();   // start cpu timer
-
-					// Call your Sort function B here to sort the array 'wData'
-			        //  Note that 'wDdata' is of size 'sz' (see case 1).
 					Shellsort(wData, sz);
-
 
 					end_time = clock();		// end cpu timer
 
@@ -193,12 +171,9 @@ int main() {
 			
 
 					begin_time = clock();   // start cpu timer
-			
-					// Call your Sort function B here to sort the array 'wData'
-			        //  Note that 'wDdata' is of size 'sz' (see case 1).
+
 					Radixsort(wData, sz);
 
-			
 					end_time = clock();		// end cpu timer
 
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
@@ -226,14 +201,7 @@ int main() {
 
 					begin_time = clock();   // start cpu timer
 
-
-					begin_time = clock();   // start cpu timer
-
-					// Call your Sort function B here to sort the array 'wData'
-			        //  Note that 'wDdata' is of size 'sz' (see case 1).
 					Countingsort(wData, sz);
-
-
 
 					end_time = clock();		// end cpu timer
 
