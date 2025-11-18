@@ -16,11 +16,13 @@ void Selectionsort(long data[], int n) {
                 least = j;
         }
 
+
         //Josh function fix --> swapping to correct spot in array
         if(least != i) {
         	long temp = data[i];
         	data[i] = data[least];
         	data[least] = temp;
         }
+
     }
 }
