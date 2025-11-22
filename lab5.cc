@@ -8,6 +8,9 @@
 //  stack space, run the following command from your terminal:
 //  ulimit -s 819200
 
+//Matt, Josh, Zach
+//sorting algorithms run time complexity
+
 #include <iostream>
 #include <ctime>
 #include "myheaders.h"
